@@ -1,0 +1,14 @@
+
+<img src="https://assets.pokemon.com/assets/cms2-pt-br/img/misc/gus/buttons/logo-pokemon-79x45.png">
+
+<div class="pokemon-list">
+
+    <app-pokemon-card
+    *ngFor="let pokemon of pokemons; index as i " 
+    [pokemon]="pokemon"
+    [numero]= "i + 1"
+    ></app-pokemon-card>
+
+</div>
+
+<!--<div *ngFor="let pokemon of pokemons"> Pokemon : {{ pokemon }} </div>-->
